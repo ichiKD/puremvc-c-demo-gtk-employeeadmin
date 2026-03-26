@@ -57,9 +57,33 @@ int main(const int argc, char **argv) {
     super->initializeFacade(super, model, view, controller); // Compose Facade with Model, View, Controller
     struct ApplicationFacade *facade = application_facade_bind(&(struct ApplicationFacade){}, super);
 
-    struct UserVO users[MAX_USERS] = {0};
-    struct RoleVO roles[MAX_USERS] = {0};
-    facade->startup(facade, (void *[]) { &users, &roles, NULL });
+    // struct UserVO users[MAX_USERS] = {0};
+    struct UserVO users[MAX_USERS] = {
+        {
+            .username = "jdoe",
+            .first = "John",
+            .last = "Doe",
+            .email = "john@email.com",
+            .department = DEPT_ACCT
+        },
+        {
+            .username = "asmith",
+            .first = "Alice",
+            .last = "Smith",
+            .email = "alice@email.com",
+            .department = DEPT_SALES
+        },
+        {
+            .username = "rsharma",
+            .first = "Rohit",
+            .last = "Sharma",
+            .email = "rohit@email.com",
+            .department = DEPT_PLANT
+        },
+        {0}
+    };
+    struct RoleVO roles[MAX_ROLES] = {0};
+    facade->startup(facade, (void *[]) { users, roles, NULL });
 
     GtkApplication *app = getApp(facade);
     const int status = g_application_run(G_APPLICATION(app), argc, argv);

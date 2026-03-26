@@ -1,11 +1,11 @@
 #include "user_proxy.h"
 
 #include <string.h>
+#include <stdio.h>
 
 static size_t count(const struct UserProxy *self) {
     const struct IProxy *super = self->super;
     const struct UserVO *data = super->getData(super);
-
     size_t total = 0;
     for (size_t i = 0; i < MAX_USERS; i++) {
         if (data[i].username == NULL || data[i].username[0] == '\0')
@@ -20,6 +20,7 @@ static bool indexOf(const struct UserProxy *self, const char *username, size_t *
     const struct UserVO *data = super->getData(super);
 
     const size_t count = self->count(self);
+    printf("Mediator loading %zu users\n", count);
     for (size_t i = 0; i < count; i++) {
         if (strcmp(data[i].username, username) == 0) { // match
             if (out) *out = i;

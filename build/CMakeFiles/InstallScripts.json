@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/build/cmake_install.cmake",
+		"/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/build/puremvc/cmake_install.cmake",
+		"/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/build/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

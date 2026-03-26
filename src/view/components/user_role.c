@@ -2,7 +2,7 @@
 
 #include "model/enum/role_enum.h"
 
-struct IUserRole delegate;
+extern struct IUserRole delegate;
 
 void user_role_set_delegate(struct IUserRole _delegate) {
     delegate = _delegate;

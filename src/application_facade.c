@@ -7,6 +7,9 @@
 
 #include <gtk/gtk.h>
 
+
+
+
 static void (*super_initializeController)(struct IFacade *self, struct IController *controller);
 
 static void initializeController(struct IFacade *self, struct IController *controller) {

@@ -8,6 +8,8 @@
 #define SERVICE_RESULT "service_result"
 #define SERVICE_FAULT "service_fault"
 
+struct FacadeMap;
+
 struct ApplicationFacade {
     struct IFacade *super;
 

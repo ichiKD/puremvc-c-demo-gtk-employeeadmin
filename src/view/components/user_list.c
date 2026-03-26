@@ -18,7 +18,8 @@ static void setup_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, 
 
 static void bind_username_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, gpointer data) {
     GtkWidget *label = gtk_list_item_get_child(list_item);
-    const struct UserVO *user = gtk_list_item_get_item(list_item);
+    GObject *obj = gtk_list_item_get_item(list_item);
+    const struct UserVO *user = g_object_get_data(obj, "user");
     gtk_label_set_text(GTK_LABEL(label), user->username);
 
     // GtkSignalListItemFactory *factory = gtk_signal_list_item_factory_new();
@@ -33,16 +34,21 @@ void user_list_run() {
         struct UserVO *users[MAX_USERS];
         const size_t count = delegate.list(delegate.context, users, MAX_USERS);
 
-        GListStore *store = g_list_store_new(G_TYPE_PTR_ARRAY);
-        for (size_t i = 0; i < count; i++) {
-            g_list_store_append(store, &users[i]);
-        }
+        GListStore *store = g_list_store_new(G_TYPE_OBJECT);
 
+        for (size_t i = 0; i < count; i++) {
+            gpointer obj = g_object_new(G_TYPE_OBJECT, NULL);
+
+            // store your pointer inside object data
+            g_object_set_data(G_OBJECT(obj), "user", users[i]);
+
+            g_list_store_append(store, obj);
+            g_object_unref(obj);
+        }
         GtkSingleSelection *selection = gtk_single_selection_new(G_LIST_MODEL(store));
         gtk_column_view_set_model(GTK_COLUMN_VIEW(column_view), GTK_SELECTION_MODEL(selection));
 
         g_object_unref(selection);
-        g_object_unref(store);
     }
 }
 
@@ -94,7 +100,17 @@ static GtkWidget *body() {
     const int count = sizeof(titles) / sizeof(titles[0]);
 
     for(int i=0; i<count; i++) {
-        GtkColumnViewColumn *column = gtk_column_view_column_new(titles[i], gtk_signal_list_item_factory_new());
+        GtkSignalListItemFactory *factory = gtk_signal_list_item_factory_new();
+        g_signal_connect(factory, "setup", G_CALLBACK(setup_cb), NULL);
+        switch(i) {
+            case 0:
+                g_signal_connect(factory, "bind", G_CALLBACK(bind_username_cb), NULL);
+                break;
+        }
+
+        GtkColumnViewColumn *column =
+            gtk_column_view_column_new(titles[i], GTK_LIST_ITEM_FACTORY(factory));
+
         gtk_column_view_column_set_expand(column, TRUE);
         gtk_column_view_append_column(GTK_COLUMN_VIEW(column_view), column);
     }

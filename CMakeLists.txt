@@ -30,7 +30,7 @@ add_library(core
 
 # Compiler Sanitizers & Warnings (cross-platform, strict)
 target_compile_options(core PRIVATE
-        $<$<C_COMPILER_ID:GNU,Clang>:-Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer>
+        $<$<C_COMPILER_ID:GNU,Clang>:-Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer>
         $<$<C_COMPILER_ID:MSVC>:/W4 /WX>)
 target_link_options(core PUBLIC
         $<$<C_COMPILER_ID:GNU,Clang>:-fsanitize=address,undefined>)
