@@ -29,6 +29,32 @@ static void bind_username_cb(GtkSignalListItemFactory *factory, GtkListItem *lis
     // gtk_column_view_append_column(GTK_COLUMN_VIEW(column_view), column);
 }
 
+static void bind_first_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, gpointer data) {
+    GtkWidget *label = gtk_list_item_get_child(list_item);
+    GObject *obj = gtk_list_item_get_item(list_item);
+    const struct UserVO *user = g_object_get_data(obj, "user");
+    gtk_label_set_text(GTK_LABEL(label), user->first);
+}
+
+static void bind_last_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, gpointer data) {
+    GtkWidget *label = gtk_list_item_get_child(list_item);
+    GObject *obj = gtk_list_item_get_item(list_item);
+    const struct UserVO *user = g_object_get_data(obj, "user");
+    gtk_label_set_text(GTK_LABEL(label), user->last);
+}
+
+static void bind_email_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, gpointer data) {
+    GtkWidget *label = gtk_list_item_get_child(list_item);
+    GObject *obj = gtk_list_item_get_item(list_item);
+    const struct UserVO *user = g_object_get_data(obj, "user");
+    gtk_label_set_text(GTK_LABEL(label), user->email);
+}
+static void bind_dept_cb(GtkSignalListItemFactory *factory, GtkListItem *list_item, gpointer data) {
+    GtkWidget *label = gtk_list_item_get_child(list_item);
+    GObject *obj = gtk_list_item_get_item(list_item);
+    const struct UserVO *user = g_object_get_data(obj, "user");
+    gtk_label_set_text(GTK_LABEL(label), dept_to_string(user->department));
+}
 void user_list_run() {
     if (delegate.list) {
         struct UserVO *users[MAX_USERS];
@@ -103,9 +129,11 @@ static GtkWidget *body() {
         GtkSignalListItemFactory *factory = gtk_signal_list_item_factory_new();
         g_signal_connect(factory, "setup", G_CALLBACK(setup_cb), NULL);
         switch(i) {
-            case 0:
-                g_signal_connect(factory, "bind", G_CALLBACK(bind_username_cb), NULL);
-                break;
+            case 0: g_signal_connect(factory, "bind", G_CALLBACK(bind_username_cb), NULL); break;
+            case 1: g_signal_connect(factory, "bind", G_CALLBACK(bind_first_cb), NULL); break;
+            case 2: g_signal_connect(factory, "bind", G_CALLBACK(bind_last_cb), NULL); break;
+            case 3: g_signal_connect(factory, "bind", G_CALLBACK(bind_email_cb), NULL); break;
+            case 4: g_signal_connect(factory, "bind", G_CALLBACK(bind_dept_cb), NULL); break;
         }
 
         GtkColumnViewColumn *column =
