@@ -1,0 +1,182 @@
+[
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/application.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/application.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/application.c",
+  "output": "CMakeFiles/core.dir/src/application.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/application_facade.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/application_facade.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/application_facade.c",
+  "output": "CMakeFiles/core.dir/src/application_facade.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/controller/startup_command.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/controller/startup_command.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/controller/startup_command.c",
+  "output": "CMakeFiles/core.dir/src/controller/startup_command.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/user_proxy.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/user_proxy.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/user_proxy.c",
+  "output": "CMakeFiles/core.dir/src/model/user_proxy.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/role_proxy.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/role_proxy.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/role_proxy.c",
+  "output": "CMakeFiles/core.dir/src/model/role_proxy.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/enum/dept_enum.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/enum/dept_enum.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/enum/dept_enum.c",
+  "output": "CMakeFiles/core.dir/src/model/enum/dept_enum.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/enum/role_enum.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/enum/role_enum.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/enum/role_enum.c",
+  "output": "CMakeFiles/core.dir/src/model/enum/role_enum.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/valueObject/user_vo.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/valueObject/user_vo.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/valueObject/user_vo.c",
+  "output": "CMakeFiles/core.dir/src/model/valueObject/user_vo.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/model/valueObject/role_vo.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/valueObject/role_vo.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/model/valueObject/role_vo.c",
+  "output": "CMakeFiles/core.dir/src/model/valueObject/role_vo.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/user_list_mediator.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_list_mediator.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_list_mediator.c",
+  "output": "CMakeFiles/core.dir/src/view/user_list_mediator.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/user_form_mediator.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_form_mediator.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_form_mediator.c",
+  "output": "CMakeFiles/core.dir/src/view/user_form_mediator.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/user_role_mediator.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_role_mediator.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/user_role_mediator.c",
+  "output": "CMakeFiles/core.dir/src/view/user_role_mediator.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/components/user_list.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_list.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_list.c",
+  "output": "CMakeFiles/core.dir/src/view/components/user_list.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/components/user_form.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_form.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_form.c",
+  "output": "CMakeFiles/core.dir/src/view/components/user_form.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/core.dir/src/view/components/user_role.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_role.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/view/components/user_role.c",
+  "output": "CMakeFiles/core.dir/src/view/components/user_role.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/employeeadmin.dir/src/main.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/main.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src/main.c",
+  "output": "CMakeFiles/employeeadmin.dir/src/main.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/core/controller.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/controller.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/controller.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/core/controller.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/core/model.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/model.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/model.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/core/model.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/core/view.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/view.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/core/view.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/core/view.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/command/simple_command.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/command/simple_command.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/command/simple_command.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/command/simple_command.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/command/macro_command.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/command/macro_command.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/command/macro_command.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/command/macro_command.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/facade/facade.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/facade/facade.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/facade/facade.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/facade/facade.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/mediator/mediator.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/mediator/mediator.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/mediator/mediator.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/mediator/mediator.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/observer/notification.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/notification.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/notification.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/observer/notification.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/observer/notifier.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/notifier.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/notifier.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/observer/notifier.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/observer/observer.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/observer.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/observer/observer.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/observer/observer.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/patterns/proxy/proxy.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/proxy/proxy.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/patterns/proxy/proxy.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/patterns/proxy/proxy.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/puremvc",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src -std=gnu11 -Wall -Wextra -Werror -fsanitize=address,undefined,leak -fno-omit-frame-pointer -o CMakeFiles/puremvc.dir/src/platform/posix/mutex.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/platform/posix/mutex.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/src/platform/posix/mutex.c",
+  "output": "puremvc/CMakeFiles/puremvc.dir/src/platform/posix/mutex.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/UserProxyTest.dir/model/user_proxy_test.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test/model/user_proxy_test.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test/model/user_proxy_test.c",
+  "output": "test/CMakeFiles/UserProxyTest.dir/model/user_proxy_test.c.o"
+},
+{
+  "directory": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test",
+  "command": "/usr/bin/cc  -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/include -I/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/src -I/mnt/c/Users/shubh/upwork/puremvc-c-multicore-framework2/include -isystem /usr/include/gtk-4.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/graphene-1.0 -isystem /usr/lib/x86_64-linux-gnu/graphene-1.0/include -std=gnu11 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/RoleProxyTest.dir/model/role_proxy_test.c.o -c /mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test/model/role_proxy_test.c",
+  "file": "/mnt/c/Users/shubh/upwork/puremvc-c-demo-gtk-employeeadmin/test/model/role_proxy_test.c",
+  "output": "test/CMakeFiles/RoleProxyTest.dir/model/role_proxy_test.c.o"
+}
+]
