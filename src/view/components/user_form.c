@@ -68,7 +68,7 @@ static GtkWidget *body(void) {
     gtk_grid_attach(GTK_GRID(grid), gtk_label_new("Department *"), 0, 6, 1, 1);
 
     GtkStringList *departments = gtk_string_list_new(NULL);
-    for (size_t i = 0; i < DEPT_COMBO_LIST_COUNT; i++)
+    for (size_t i = 0; i < (size_t)DEPT_COMBO_LIST_COUNT; i++)
         gtk_string_list_append(departments, dept_to_string(DEPT_COMBO_LIST[i]));
 
     GtkWidget *dropdown = gtk_drop_down_new(NULL, NULL);

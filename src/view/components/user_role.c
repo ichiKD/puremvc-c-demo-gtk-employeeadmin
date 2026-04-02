@@ -66,7 +66,7 @@ static GtkWidget *footer() {
     gtk_widget_set_margin_top(box, 5);
 
     GtkStringList *roles = gtk_string_list_new(NULL);
-    for (size_t i = 0; i < ROLE_COMBO_LIST_COUNT; i++)
+    for (size_t i = 0; i < (size_t)ROLE_COMBO_LIST_COUNT; i++)
         gtk_string_list_append(roles, role_to_string(ROLE_COMBO_LIST[i]));
 
     GtkWidget *dropdown = gtk_drop_down_new(NULL, NULL);
