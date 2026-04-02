@@ -2,6 +2,8 @@
 #include "employee_admin/i_user_list.h"
 static struct IUserList delegate;
 static GtkWidget *column_view;
+static GtkSingleSelection *selection_model;
+static GListStore *store;
 void user_list_set_delegate(struct IUserList _delegate) {
     delegate = _delegate;
 }
@@ -27,38 +29,29 @@ typedef struct {
     const char *title;
     FieldGetter getter;
 } ColumnDef;
-
+static void on_delete_clicked(GtkButton *button, gpointer data) {
+    if (!selection_model || !store) return;
+    guint pos = gtk_single_selection_get_selected(selection_model);
+    if (pos == GTK_INVALID_LIST_POSITION) return;
+    g_list_store_remove(store, pos);
+}
 void user_list_run() {
     if (!delegate.list) return;
+    if (store) g_object_unref(store);
     struct UserVO *users[MAX_USERS];
     size_t count = delegate.list(delegate.context, users, MAX_USERS);
-    GListStore *store = g_list_store_new(G_TYPE_OBJECT);
+    store = g_list_store_new(G_TYPE_OBJECT);
     for (size_t i = 0; i < count; i++) {
         gpointer obj = g_object_new(G_TYPE_OBJECT, NULL);
         g_object_set_data(G_OBJECT(obj), "user", users[i]);
         g_list_store_append(store, obj);
         g_object_unref(obj);
     }
-    GtkSingleSelection *selection = gtk_single_selection_new(G_LIST_MODEL(store));
-    gtk_column_view_set_model(GTK_COLUMN_VIEW(column_view), GTK_SELECTION_MODEL(selection));
-    g_object_unref(selection);
+    selection_model = gtk_single_selection_new(G_LIST_MODEL(store));
+    gtk_column_view_set_model(GTK_COLUMN_VIEW(column_view), GTK_SELECTION_MODEL(selection_model));
+    g_object_unref(selection_model);
 }
-static GtkWidget *header();
-static GtkWidget *body();
-static GtkWidget *footer();
-GtkWidget *user_list_init() {
-    GtkWidget *frame = gtk_frame_new(NULL);
-    gtk_frame_set_label_widget(GTK_FRAME(frame), header());  // Header
-    GtkWidget *content_area = gtk_box_new(GTK_ORIENTATION_VERTICAL, 6);  // Layout Container
-    gtk_widget_set_margin_start(content_area, 15);
-    gtk_widget_set_margin_end(content_area, 15);
-    gtk_widget_set_margin_top(content_area, 15);
-    gtk_widget_set_margin_bottom(content_area, 10);
-    gtk_box_append(GTK_BOX(content_area), body());  // Assembly
-    gtk_box_append(GTK_BOX(content_area), footer());
-    gtk_frame_set_child(GTK_FRAME(frame), content_area);
-    return frame;
-}
+
 static GtkWidget *header() {
     GtkWidget *label = gtk_label_new("Users");
     gtk_widget_add_css_class(label, "title-4");
@@ -69,7 +62,6 @@ static GtkWidget *header() {
     gtk_widget_set_margin_bottom(label, 0);
     return label;
 }
-
 static GtkWidget *body() {
     GtkWidget *scroller = gtk_scrolled_window_new();
     gtk_widget_set_vexpand(scroller, TRUE);
@@ -84,10 +76,10 @@ static GtkWidget *body() {
     };
     int count = sizeof(columns) / sizeof(columns[0]);
     for (int i = 0; i < count; i++) {
-        GtkSignalListItemFactory *factory = gtk_signal_list_item_factory_new();
+        GtkListItemFactory *factory = gtk_signal_list_item_factory_new();
         g_signal_connect(factory, "setup", G_CALLBACK(setup_cb), NULL);
         g_signal_connect(factory, "bind", G_CALLBACK(bind_generic_cb), columns[i].getter);
-        GtkColumnViewColumn *column = gtk_column_view_column_new(columns[i].title, GTK_LIST_ITEM_FACTORY(factory));
+        GtkColumnViewColumn *column = gtk_column_view_column_new(columns[i].title, factory);
         gtk_column_view_column_set_expand(column, TRUE);
         gtk_column_view_append_column(GTK_COLUMN_VIEW(column_view), column);
     }
@@ -102,10 +94,24 @@ static GtkWidget *footer() {
     gtk_widget_set_hexpand(spacer, TRUE);
     GtkWidget *delete = gtk_button_new_with_label("Delete");
     gtk_widget_add_css_class(delete, "destructive-action");
+    g_signal_connect(delete, "clicked", G_CALLBACK(on_delete_clicked), NULL);
     GtkWidget *new_btn = gtk_button_new_with_label("New");
     gtk_widget_add_css_class(new_btn, "suggested-action");
     gtk_box_append(GTK_BOX(box), spacer);
     gtk_box_append(GTK_BOX(box), delete);
     gtk_box_append(GTK_BOX(box), new_btn);
     return box;
+}
+GtkWidget *user_list_init() {
+    GtkWidget *frame = gtk_frame_new(NULL);
+    gtk_frame_set_label_widget(GTK_FRAME(frame), header());  // Header
+    GtkWidget *content_area = gtk_box_new(GTK_ORIENTATION_VERTICAL, 6); // Layout Container
+    gtk_widget_set_margin_start(content_area, 15);
+    gtk_widget_set_margin_end(content_area, 15);
+    gtk_widget_set_margin_top(content_area, 15);
+    gtk_widget_set_margin_bottom(content_area, 10);
+    gtk_box_append(GTK_BOX(content_area), body());  // Assembly
+    gtk_box_append(GTK_BOX(content_area), footer());
+    gtk_frame_set_child(GTK_FRAME(frame), content_area);
+    return frame;
 }
